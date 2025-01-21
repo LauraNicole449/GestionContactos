@@ -35,10 +35,11 @@
             // 
             this.añadirContacto.Location = new System.Drawing.Point(339, 98);
             this.añadirContacto.Name = "añadirContacto";
-            this.añadirContacto.Size = new System.Drawing.Size(75, 23);
+            this.añadirContacto.Size = new System.Drawing.Size(101, 23);
             this.añadirContacto.TabIndex = 0;
             this.añadirContacto.Text = "Añadir contacto";
             this.añadirContacto.UseVisualStyleBackColor = true;
+            this.añadirContacto.Click += new System.EventHandler(this.añadirContacto_Click);
             // 
             // Form1
             // 
