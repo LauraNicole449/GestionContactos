@@ -20,16 +20,18 @@ namespace gestionContactos
         }
         const int TAM = 10;
         string[] nombre = new string[TAM];
-        int[] numero = new int[TAM];
+        string[] numero = new string[TAM];
         int i = 0;
         void añadirContactos()
         {
-            Console.WriteLine(i);
-            if (nombre[i]== null && numero[i]==' ')
+            Console.WriteLine("a");
+            if (nombre[i]== null && numero[i]== null)
             {
+                Console.WriteLine("aa");
                 nombre[i] = Interaction.InputBox("Introduce tu nombre " + i);
-                numero[i] = int.Parse(Interaction.InputBox("Introduce tu numero " + i));
+                numero[i] = Interaction.InputBox("Introduce tu numero " + i);
             }
+            Console.WriteLine("aaa");
             i++;
         }
         private void añadirContacto_Click(object sender, EventArgs e)
