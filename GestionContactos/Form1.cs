@@ -55,7 +55,7 @@ namespace GestionContactos
         //yo
         private void btnDeleteContacto_Click(object sender, EventArgs e)
         {
-            string name = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre del contacto a eliminar:"); ;
+            string name = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre del contacto a eliminar:");
             int index = -1;
 
             for (int i = 0; i < count; i++)
@@ -88,7 +88,27 @@ namespace GestionContactos
             }
             MessageBox.Show(contactList, "Lista de Contactos");
         }
+        //yo
+        private void btnModificarContacto_Click(object sender, EventArgs e)
+        {
+            string name = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el contacto a modificar:");
+            int index = -1;
 
-       
+            for (int i = 0; i < count; i++)
+            {
+                if (nombres[i] == name)
+                {
+                    index = i;
+                }
+            }
+
+            if (index == -1)
+                MessageBox.Show("El contacto no existe.");
+            else
+            {
+                nombres[index] = "";
+                telefonos[index] = "";
+            }
+        }
     }
 }
