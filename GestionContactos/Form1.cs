@@ -52,10 +52,37 @@ namespace GestionContactos
                 count++;
             }
         }
+        //yo
+        private void btnDeleteContacto_Click(object sender, EventArgs e)
+        {
+            string name = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre del contacto a eliminar:"); ;
+            int index = -1;
 
+            for (int i = 0; i < count; i++)
+            {
+                if (nombres[i] == name)
+                {
+                    index = i;
+                }
+            }
+
+            if (index == -1)
+            {
+                MessageBox.Show("El contacto no existe.");
+            }
+               
+            else
+            {
+                nombres[index] = "";
+                telefonos[index] = "";
+            }
+        }
+        }
         private void btnMostrarContactos_Click(object sender, EventArgs e)
         {       
 
         }
+
+       
     }
 }
