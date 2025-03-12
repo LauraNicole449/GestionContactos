@@ -42,6 +42,7 @@
             this.btnAddContacto.TabIndex = 0;
             this.btnAddContacto.Text = "Añadir contacto";
             this.btnAddContacto.UseVisualStyleBackColor = true;
+            this.btnAddContacto.Click += new System.EventHandler(this.btnAddContacto_Click);
             // 
             // btnDeleteContacto
             // 
@@ -69,6 +70,7 @@
             this.btnMostrarContactos.TabIndex = 3;
             this.btnMostrarContactos.Text = "mostrar contactos";
             this.btnMostrarContactos.UseVisualStyleBackColor = true;
+            this.btnMostrarContactos.Click += new System.EventHandler(this.btnMostrarContactos_Click);
             // 
             // Form1
             // 

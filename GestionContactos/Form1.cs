@@ -16,5 +16,19 @@ namespace GestionContactos
         {
             InitializeComponent();
         }
+        //yo
+        private const int MAX_CONTACTS = 10;
+        private string[] nombres = new string[MAX_CONTACTS];
+        private string[] telefonos = new string[MAX_CONTACTS];
+        private int count = 0;
+        private void btnAddContacto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMostrarContactos_Click(object sender, EventArgs e)
+        {       
+
+        }
     }
 }
