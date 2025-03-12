@@ -76,11 +76,17 @@ namespace GestionContactos
                 nombres[index] = "";
                 telefonos[index] = "";
             }
+        
         }
-        }
+        //el otro
         private void btnMostrarContactos_Click(object sender, EventArgs e)
-        {       
-
+        {
+            string contactList = "Contactos:\n";
+            for (int i = 0; i < count; i++)
+            {
+                contactList += $"{nombres[i]} - {telefonos[i]}\n";
+            }
+            MessageBox.Show(contactList, "Lista de Contactos");
         }
 
        
